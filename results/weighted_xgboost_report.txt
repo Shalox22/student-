@@ -1,0 +1,24 @@
+Weighted XGBoost Model Comparison
+=================================
+
+   experiment  accuracy  macro_f1  enrolled_f1  enrolled_recall
+     baseline  0.771751  0.709689     0.496599         0.459119
+enrolled_1.25  0.768362  0.712390     0.512821         0.503145
+ enrolled_1.5  0.764972  0.710374     0.515723         0.515723
+enrolled_1.75  0.761582  0.710666     0.516517         0.540881
+ enrolled_2.0  0.750282  0.698234     0.494186         0.534591
+
+Best Model:
+Experiment: enrolled_1.25
+Accuracy: 0.7684
+Macro F1: 0.7124
+
+              precision    recall  f1-score   support
+
+     Dropout       0.82      0.73      0.77       284
+    Enrolled       0.52      0.50      0.51       159
+    Graduate       0.82      0.89      0.85       442
+
+    accuracy                           0.77       885
+   macro avg       0.72      0.71      0.71       885
+weighted avg       0.77      0.77      0.77       885
