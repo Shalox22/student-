@@ -5,3 +5,10 @@ __pycache__/
 venv/
 .DS_Store
 *.pkl
+
+# The API loads these three inference artifacts at startup. Keep all other
+# generated pickle files out of source control.
+!models/
+!models/student_success_weighted_xgboost.pkl
+!models/weighted_xgboost_label_encoder.pkl
+!models/weighted_xgboost_feature_names.pkl
